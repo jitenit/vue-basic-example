@@ -15,10 +15,22 @@
     <!-- Navigation -->
     <nav class="navbar shadow bg-white rounded justify-content-between flex-nowrap flex-row fixed-top">
       <div class="container">
-        <a class="navbar-brand float-left" href="https://www.positronx.io" target="_blank">
-           positronX.io
+        <a class="navbar-brand float-left" href="https://profiles.wordpress.org/jitenit/" target="_blank">
+           JP Vue JS
         </a>
         <ul class="nav navbar-nav flex-row float-right">
+          <li class="nav-item">
+            <router-link class="nav-link pr-3" to="/home">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link pr-3" to="/about">About Us</router-link>
+          </li>
+           <li class="nav-item">
+            <router-link class="nav-link pr-3" to="/service">Our Services</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link pr-3" to="/hello-world">Hello World</router-link>
+          </li>
           <li class="nav-item">
             <router-link class="nav-link pr-3" to="/login">Sign in</router-link>
           </li>
