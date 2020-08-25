@@ -13,6 +13,11 @@
                 <input type="email" class="form-control form-control-lg" v-model="user.email" />
             </div>
 
+             <div class="form-group">
+                <label>Phone No</label>
+                <input type="phone" class="form-control form-control-lg" v-model="user.phone" />
+            </div>
+
             <div class="form-group">
                 <label>Password</label>
                 <input type="password" class="form-control form-control-lg" v-model="user.password" />
@@ -40,6 +45,7 @@ export default {
       user: {
         name: '',
         email: '',
+        phone: '',
         password: ''
       }
     };
@@ -52,7 +58,8 @@ export default {
       .then((res) => {
         res.user
           .updateProfile({
-            displayName: this.user.name
+            displayName: this.user.name,
+             phone: this.user.phone
           })
           .then(() => {
             this.$router.push('/login')

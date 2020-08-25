@@ -4,6 +4,7 @@
         <h3>Welcome</h3>
            <p>{{user.displayName}}</p>
            <p>{{user.email}}</p>
+           <p>{{user.phone}}</p>
         
         <button 
         type="submit" 
